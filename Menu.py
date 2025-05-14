@@ -11,7 +11,7 @@ class Menu_item:
         return f"{self.name} - x{self.quantity} ${self.total_price():,.2f}"
 
 
-class Beer(Menu_item):
+class Beer(Menu_item): 
     def __init__(self, brand: str, price: float, quantity: int = 1):
         super().__init__(name=brand, price=price, quantity=quantity)
         self.brand = brand
